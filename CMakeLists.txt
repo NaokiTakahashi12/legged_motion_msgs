@@ -17,9 +17,10 @@ find_package(ament_cmake_auto REQUIRED)
 ament_auto_find_build_dependencies()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Vector3List.msg"
-  "msg/Vector3ListStamped.msg"
-  "msg/Temperatures.msg"
+  msg/Vector3List.msg
+  msg/Vector3ListStamped.msg
+  msg/NamedVector3List.msg
+  msg/Temperatures.msg
   DEPENDENCIES
     std_msgs
     geometry_msgs
